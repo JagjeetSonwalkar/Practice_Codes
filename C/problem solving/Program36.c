@@ -1,0 +1,56 @@
+// Display Jay Ganesh on console n times where take the n value form the user using iteration approch (while loop)
+
+#include<stdio.h>
+
+void Display(int iValue)
+{
+    int iCnt = 0 ;
+
+    iCnt = 1 ;
+    while(iCnt <= iValue)
+    {
+        printf("Jay Ganesh... \n");
+        iCnt++ ;
+    }
+}
+
+int main()
+{
+    int iFrequency = 0 ;
+
+    printf("Enter the frequency : \n ");
+    scanf("%d",&iFrequency);
+
+    Display(iFrequency);
+    
+    return 0 ;
+}
+
+/*
+    OUTPUT
+
+    Enter the frequency :
+    5
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+
+
+    Enter the frequency :
+    12
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+    Jay Ganesh...
+
+*/
