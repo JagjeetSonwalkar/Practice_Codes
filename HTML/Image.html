@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img element</title>
+</head>
+<body>
+    <img src = "D:\HTML\ss.png" alt = "wallpaper Screenshot" width="1000px" height="500px"/>
+
+    <img src = "D:\HTML\ss.png" alt = "wallpaper Screenshot" width="1000px" height="500px" border="3"/>
+
+    <img src = "D:\HTML\ss.png" alt = "wallpaper Screenshot" width="800px" height="400px" align="right" />
+
+    <!--Responsive Images-->
+
+    <img src = "D:\HTML\ss.png" alt = "recylebin logo" style="width: 100%; height: auto;"/>
+
+    <picture>
+        <source media="(max-width: 799px)" srcset="D:\HTML\recylebin.png">
+        <source media="(min-width: 800px)" srcset="D:\HTML\ss.png">
+        
+        <img src="recylebin.png" alt="default img">
+    </picture>
+
+    <!--if we dont set any srcset then the default img element will display the image-->
+    <picture>
+        <source media="(max-width: 799px)" srcset="">
+        <source media="(min-width: 800px)" srcset="">
+        
+        <img src="recylebin.png" alt="default img">
+    </picture>
+</body>
+</html>

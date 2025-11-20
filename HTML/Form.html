@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form>
+        <!--Text Input Controls-->
+
+        <!--Single-line Text Input Control-->
+        First Name:<input type = "text" name = "First Name">
+        Last Name:<input type = "text" name = "Last Name">
+
+        <!--Password Input Control-->
+        Password:<input type="password" name="Password">
+
+        <!--Multiple-line Text Input Control-->
+        <br>Describtion:<br>
+        <textarea rows="5%" cols="20%">Enter the Describtion here...</textarea>
+
+        <!--Checkboxes Control-->
+        <br>
+        <input type="checkbox" name="Virat" value="on">Virat
+        <input type="checkbox" name="Rohit" value="on">Rohit
+
+
+        <!--Radio Buttons Control-->
+        <br>
+        <input type="radio" value="MI"  name="Team">MI
+        <input type="radio" value="RCB" name="Team">RCB
+        <input type="radio" value="CSK" name="Team">CSK
+
+        <!--Select Box Control-->
+        <br>
+        <p>choose the fav ipl team</p>
+        <select>
+            <option value="MI" selected>MI</option>
+            <option value="RCB">RCB</option>
+            <option value="CSK">CSK</option>
+        </select>
+
+        <!--File Select Box-->
+        <p>upload your file</p>
+        <input type="file" name="fileupload"  accept="Document/*">
+
+        <!--Button Control-->
+        <input type="reset" name="reset" value="reset">
+        <input type="button" name="ok" value="ok">
+        <input type="submit" name="submit" value="submit">
+        <input type="image" name="imageButton" src="recylebin.png">
+
+        <!--Hidden Form Control-->
+        <input type="hidden" name="pageName" value="10">
+
+        <!--Date & Time-->
+        <p>Select DOB</p>
+        <input type="date" name="DOB" > <!--In type we have other option also date month week year ....-->
+
+        <!--Number-->
+        <p>rate for the quality:</p>
+        <input type="number" min="1" max="5" step="1" value="5" name="newInput">
+
+        <!--Number-->
+        <p>select your range for mi team:</p>
+        <input type="range" min="1" max="5" step="1" value="5" name="newInput">
+
+        <!--email-->
+        Enter the email:<input type="email" name="newInput">
+
+        <!--URL-->
+        paste the url:<input type="url" name="newInput">
+
+        <br><br>
+        Location:
+        <input list="location" name="cities">
+         <datalist id = "location">
+            <option value="Banglore">
+            <option value="Hyderabad">
+            <option value="Patna">
+            <option value="Delhi">
+         </datalist>
+    </form>
+</body>
+</html>

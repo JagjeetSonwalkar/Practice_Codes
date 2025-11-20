@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding</title>
+</head>
+<body>
+    <!--Embedding a Video Using <embed> Element-->
+    <embed src="/html/media/video/sampleTP.mp4" 
+          type="video/mp4" 
+          width="450" 
+          height="250">
+   </embed>
+
+   <!--Embedding an Audio Using <embed> Element-->
+    <embed src = "/html/media/audio/sample_3sec_audio.mp3" 
+          type = "audio/mp3" 
+          width="450" 
+          height="250">
+   </embed>
+
+   <!--Render a PDF Using <object> Element-->
+   <object data="html/pdf/index.pdf" 
+              type="application/pdf" 
+              width="300" 
+              height="200">
+    </object>
+
+    <!--Render an HTML Document Inside Webpage-->
+    <object data="html/index.htm" 
+            type="text/html" 
+            width="500" 
+            height="400">
+      alt : <a href="html/index.htm">
+         test.htm
+      </a>
+      
+   </object>
+</body>
+</html>
