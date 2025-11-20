@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////                              Memory allocation startegies                                  
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std ;
+
+int main()
+{
+    int Arr[] = {10,20,30,40};      // static 
+     
+    int *Brr = NULL ;
+    char *Crr = NULL ;
+
+    Brr = new int[5] ;      // Dynamic
+    Crr = new char[5] ;
+
+    delete []Brr ;          // free the memory after using it
+    delete []Crr ; 
+
+    return 0 ;
+}
+
+/*
+
+
+*/
